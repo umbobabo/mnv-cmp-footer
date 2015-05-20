@@ -2,7 +2,6 @@
   "name": "Footer",
   "version": "0.0.0",
   "dependencies": {
-    "mnv-shared": "*",
     "handlebars": "~3.0.3"
   }
 }

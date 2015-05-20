@@ -1,5 +1,5 @@
 var ecFooterData ={
-   "ec-footer-0":{
+   "data":{
    "company-info":[
       {
          "link_title":"Advertise",
