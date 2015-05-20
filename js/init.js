@@ -1,10 +1,20 @@
+function ecFooter(){
+  $.extend(this , ecFooterConfig);
+}
+
+ecFooter.prototype = new Widget();
+
+/* Script below just for handlebars example */
 $(document).ready(function(){
-  var tmp = Handlebars.templates['ec-storytilesreveal'];
-  $('.mnv-ec-storytilesreveal').html(tmp({
-    "title": "Instance 0 of your widget",
-    "list": [
-      { "label": "First li element" },
-      { "label": "Second li element" }
-    ]
-  }));
+  $("[data-mnv='ecFooter']")
+    .on('dataProviding', function(){
+      //Retrive data from the data attribute
+      var widget = $.data(this, 'widget');
+      widget.log('Received data');
+      var tmp = Handlebars.templates['ec-footer'];
+      $(this).html(tmp(widget.data));
+    });
+
+    WLCMI.start();
 });
+
