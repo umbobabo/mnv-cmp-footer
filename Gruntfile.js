@@ -64,8 +64,16 @@ module.exports = function(grunt) {
     },
     copy: {
       template: {
-        src: 'js/tpl/handlebars/<%= pkg.ns.folder %>.handlebars',
-        dest: 'dist/tpl/html.handlebars',
+        files: [
+          {
+            src: 'js/tpl/handlebars/<%= pkg.ns.folder %>.handlebars',
+            dest: 'dist/tpl/html.handlebars'
+          },
+          {
+            src: 'css/style.css',
+            dest: 'dist/css/style.css'
+          }
+        ]
       },
     },
     uglify: {
