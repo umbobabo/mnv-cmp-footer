@@ -45,32 +45,33 @@
   <div class="footer-container">
     <nav class="footer-left">
       <ul>
-        {{#each contact}}
+
+        {{#each mnv-cmp-footer.contact}}
           <li><a href="{{link_path}}">{{link_title}}</a></li>
         {{/each}}
       </ul>
     </nav>
     <nav class="footer-mid">
       <ul class="footer-list">
-        {{#each company-info}}
+        {{#each mnv-cmp-footer.company-info}}
           <li><a href="{{link_path}}">{{link_title}}</a></li>
         {{/each}}
       </ul>
     </nav>
     <nav class="footer-right">
       <ul class="footer-list">
-        {{#each company-info-2}}
+        {{#each mnv-cmp-footer.company-info-2}}
           <li><a href="{{link_path}}">{{link_title}}</a></li>
         {{/each}}
       </ul>
     </nav>
     <nav class="footer-far-right">
-      {{#social-header}}
+      {{#mnv-cmp-footer.social-header}}
       <div class="social-header">{{title}}</div>
-      {{/social-header}}
+      {{/mnv-cmp-footer.social-header}}
 
        <ul class="social-follow">
-        {{#each social-channel}}
+        {{#each mnv-cmp-footer.social-channel}}
         <li class="">
           <a href="{{social_link_path}}">
             <svg viewbox="0 0 100 100" class="icon {{social_icon}}">
@@ -80,16 +81,16 @@
         </li>
         {{/each}}
       </ul>
-        {{#social-footer}}
+        {{#mnv-cmp-footer.social-footer}}
         <div class="social-footer"><a href="{{social_footer_path}}">{{title}}</a></div>
-        {{/social-footer}}
+        {{/mnv-cmp-footer.social-footer}}
     </nav>
       <div class="footer-bottom">
     <ul>
-      {{#each legal}}
+      {{#each mnv-cmp-footer.legal}}
         <li><a href="{{link_path}}">{{link_title}}</a></li>
       {{/each}}
-        <li class="copyright">{{#copyright}}{{copy}}{{/copyright}}</li>
+        <li class="copyright">{{#mnv-cmp-footer.copyright}}{{copy}}{{/mnv-cmp-footer.copyright}}</li>
     </ul>
   </div>
 </div>

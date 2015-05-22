@@ -70,5 +70,5 @@
 
 docReady(function(){
   var tmp = Handlebars.templates['ec-footer'];
-  document.querySelector('.mnv-ec-footer').innerHTML = tmp(ecFooterData['mnv-cmp-footer']);
+  document.querySelector('.mnv-ec-footer').innerHTML = tmp(ecFooterData);
 });
