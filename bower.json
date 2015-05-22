@@ -1,7 +1,7 @@
 {
   "name": "Footer",
   "version": "0.1.1",
-  "dependencies": {
+  "devDependencies": {
     "handlebars": "~3.0.3"
   },
   "homepage": "https://github.com/umbobabo/mnv-cmp-footer",
