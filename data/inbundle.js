@@ -1,5 +1,5 @@
 var ecFooterData ={
-   "data":{
+   "mnv-cmp-footer":{
    "company-info":[
       {
          "link_title":"Advertise",
